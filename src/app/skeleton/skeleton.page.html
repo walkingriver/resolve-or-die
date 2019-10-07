@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Skeleton Text</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <p>Data from service</p>
+    <div *ngIf="dataText"></div>
+    <div *ngIf="!dataText && !errorText">
+      <ion-skeleton-text animated style="width:40%"></ion-skeleton-text>
+      <ion-skeleton-text animated style="width:15%"></ion-skeleton-text>
+      <ion-skeleton-text animated style="width:25%"></ion-skeleton-text>
+    </div>
+      <p *ngIf="errorText">Error: {{errorText}}. You can <a (click)="getData()">retry</a>, or <a href="/home">return home</a>.</p>
+  </ion-content>
+  

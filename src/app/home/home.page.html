@@ -1,14 +1,18 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Resolve or Die
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <p>This page lets you see three different strategies for handling errors while loading asynchronous data on a page. Each page calls the same data service, which simply waits 3.5 seconds and then throws an error.</p>
+    <ul>
+      <li><a href="/resolver">Page uses a Route Resolver, redirecting to error page.</a></li>
+      <li><a href="/loading">Page renders, and loads data with a Loading indicator.</a></li>
+      <li><a href="/skeleton">Page renders with skeleton text.</a></li>
+    </ul>
   </div>
 </ion-content>

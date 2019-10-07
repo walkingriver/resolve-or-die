@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Loading Indicator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p>Data from service: &nbsp;</p>
+  <p *ngIf="errorText">Error: {{errorText}}. You can <a (click)="getData()">retry</a>, or <a href="/home">return home</a>.</p>
+</ion-content>
